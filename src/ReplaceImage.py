@@ -7,8 +7,13 @@ import pandas as pd
 img_path = glob.glob('../output/*.jpg')[0]
 img = Image.open(img_path)
 
-#Convert to be 16 pixels by 16 pixels
-result = img.resize((20, 20), Image.ANTIALIAS)
+
+base = 20
+percent = (base/float(img.size[0]))
+height = int((float(img.size[1])*float(percent)))
+
+#TODO: Make this proportional to image size
+result = img.resize((base, height), Image.ANTIALIAS)
 
 #Convert to dataframe with arrays representing colours
 pixel_array = np.array(result)
