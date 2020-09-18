@@ -17,4 +17,7 @@ for index, row in df.iterrows():
             final_output += space*' '
     final_output += '\n'
 
-print(final_output)
+
+with open('../output/bartist.txt','w+', encoding='utf-8') as file:
+    file.write(final_output)
+    file.close()
