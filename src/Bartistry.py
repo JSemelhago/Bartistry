@@ -51,7 +51,7 @@ rect = (x,y,x+w,y+h)
 
 #Grab foreground from rectangle
 cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
-cut_mask = np.where((mask==2)|(mask==0),0,1).astype('uint8')
+cut_mask = np.where((mask==2)|(mask==0),255,1).astype('uint8')
 
 if cut_mask.any():
     print('Image mask successfully created!')
