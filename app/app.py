@@ -147,8 +147,7 @@ def bartistry():
     if os.path.isfile('../output/bartist.txt'):
         print('Text file successfully created!')
 
-    directory = 'C://Users/jseme/Documents/Hackathons/SillyHacks_2020/Bartistry/output/bartist.txt'
-    return render_template('product-page.html'), send_file(directory.encode('utf-8'), as_attachment=True, mimetype="application/octet-stream", attachment_filename="bartist.txt")
+    return render_template('product-page.html')
 
 @app.route("/upload-image", methods=["GET","POST"])
 def upload_image():
