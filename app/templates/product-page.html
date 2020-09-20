@@ -52,13 +52,20 @@
                             </div>
                             <div class="row">
                                 <form action="/input-text" method="POST">
-                                <div class="col"><label for="base">Enter number of base characters (default = 20): </label>
-                                    <input type="text" id="base" name="base"/>
-                                    <input type="submit" value="Submit"></div>
+                                    <div class="col"><label for="base">Enter number of base characters (default = 20): </label>
+                                        <input type="text" id="base" name="base"/>
+                                        <input type="submit" value="Submit"></div>
                                 </form>
                             </div>
                         </div><div class="text-center">
-                        <button class="btn btn-primary" type="button">Time travel!</button>
+                        <form action="/python" method="POST">
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input type="button" class="custom-file-input" name="python" id="python"/>
+                                </div>  
+                            </div>
+                            <button type="submit" class="btn btn-primary">Time travel!</button>
+                        </form>
                         </div></div>
                 </div>
             </section>
