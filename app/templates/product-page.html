@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Product - 🅱️artistry</title>
+        <meta name="description" content="Unleash the inner 🅱️artist!">
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+        <link rel="stylesheet" href="../static/fonts/simple-line-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+        <link rel="stylesheet" href="../static/css/smoothproducts.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+            <div class="container"><a class="navbar-brand logo" href="#">🅱️artistry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                     id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="features.html">How to use</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="product-page.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="page product-page">
+            <section class="clean-block clean-product dark">
+                <div class="container">
+                    <div class="block-heading"><h2 class="text-info"><br />🅱️artistry<br /><br /></h2>
+                        <p>Unleash the inner&nbsp;🅱️artist!</p>
+                    </div>
+                    <div class="block-content">
+                        <div class="product-info">
+                            <div class="row">
+                                <div class="col">
+                                    <form action="/upload-image" method="POST" enctype="multipart/form-data">
+
+                                        <div class="form-group">
+                                            <label>Select image</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="image" id="image"/>
+                                                <label class="custom-file-label" for="image">Select image...</label>
+                                            </div>  
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Upload</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form action="/input-text" method="POST">
+                                    <div class="col"><label for="base">Enter number of base characters (default = 20): </label>
+                                        <input type="text" id="base" name="base"/>
+                                        <input type="submit" value="Submit"></div>
+                                </form>
+                            </div>
+                        </div><div class="text-center">
+                        <form action="/python" method="POST">
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input type="button" class="custom-file-input" name="python" id="python"/>
+                                </div>  
+                            </div>
+                            <button type="submit" class="btn btn-primary">Time travel!</button>
+                        </form>
+                        </div></div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer dark">
+            <div class="footer-copyright"><p>Justin Semelhago - <a href="https://github.com/JSemelhago/Bartistry.git">Github</a></p></div>
+        </footer>
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script src="../static/js/smoothproducts.min.js"></script>
+        <script src="../static/js/theme.js"></script>
+    </body>
+
+</html>
