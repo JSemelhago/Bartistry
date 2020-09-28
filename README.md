@@ -1,7 +1,7 @@
 # Bartistry
 Unleash the inner 🅱️artist
 
-(Submission for Silly Hacks 2020)
+(Submission for Silly Hacks 2020 -- Code that utilizes image processing tools in Python to convert foregrounds of images into emoticons. UI built using Bootstrap)
 
 ## Installation
 
