@@ -1,6 +1,8 @@
 # Bartistry
 Unleash the inner 🅱️artist
 
+(Submission for Silly Hacks 2020)
+
 ## Installation
 
 1. Clone the repo. using `git clone`
